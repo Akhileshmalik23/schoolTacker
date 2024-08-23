@@ -8,6 +8,14 @@ const PORT = 3000;
 const app = express();
 app.use(bodyParser.json());
 
+
+app.get('/', (req, res) => {
+    res.send('products api running new deploy');
+});
+app.get('/ping', (req, res) => {
+    res.send('<=PONG=>');
+});
+
 // Initialize the database connection
 const initDb = async () => {
     try {
