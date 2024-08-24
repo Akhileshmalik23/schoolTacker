@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 
 app.get('/', (req, res) => {
-    res.send('products api running new deploy');
+    res.send('go to the /api/listSchools route and use Param to find the school location ');
 });
 app.get('/ping', (req, res) => {
     res.send('<=PONG=>');
